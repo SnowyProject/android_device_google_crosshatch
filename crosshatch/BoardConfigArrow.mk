@@ -16,3 +16,5 @@
 
 # Boardconfig for arrow_crosshatch
 -include device/google/crosshatch/BoardConfigArrow.mk
+
+-include vendor/google/crosshatch/BoardConfigVendor.mk

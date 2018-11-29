@@ -16,3 +16,5 @@
 
 # Boardconfig for arrow_blueline
 -include device/google/crosshatch/BoardConfigArrow.mk
+
+-include vendor/google/blueline/BoardConfigVendor.mk
