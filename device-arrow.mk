@@ -192,6 +192,11 @@ PRODUCT_PACKAGES += \
     android.hardware.radio@1.2.vendor \
     android.hardware.radio@1.3.vendor
 
+# RCS
+PRODUCT_PACKAGES += \
+    PresencePolling \
+    RcsService
+
 # Sensor
 PRODUCT_PACKAGES += \
     libsensorndkbridge:64 \
