@@ -4,6 +4,10 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Active Edge
+PRODUCT_PACKAGES += \
+    ElmyraService
+
 # Display
 PRODUCT_PACKAGES += \
     libdisplayconfig
