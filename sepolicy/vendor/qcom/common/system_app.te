@@ -4,3 +4,7 @@ userdebug_or_eng(`
   allow system_app diag_device:chr_file rw_file_perms;
 ')
 set_prop(system_app, vendor_bluetooth_prop)
+
+# Kcal
+allow system_app sysfs_kcal:dir search;	
+allow system_app sysfs_kcal:file rw_file_perms;
