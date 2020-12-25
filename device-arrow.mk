@@ -163,6 +163,10 @@ PRODUCT_PACKAGES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-arrow
 
+# Parts
+PRODUCT_PACKAGES += \
+    GoogleParts
+
 # Perf
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.perf@1.0 \
