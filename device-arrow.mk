@@ -69,6 +69,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.cryptfshw@1.0 \
     vendor.qti.hardware.cryptfshw@1.0.vendor
 
+# Parts
+PRODUCT_PACKAGES += \
+    GoogleParts
+
 # Perf
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.perf@1.0 \
