@@ -18,3 +18,6 @@
 -include device/google/crosshatch/BoardConfigArrow.mk
 
 -include vendor/google/crosshatch/BoardConfigVendor.mk
+
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += device/google/crosshatch/crosshatch/overlay-arrow
