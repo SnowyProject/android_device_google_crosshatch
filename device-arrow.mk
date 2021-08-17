@@ -156,6 +156,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.perf@1.0.vendor \
     vendor.qti.hardware.perf@2.0.vendor
 
+# Prebuilt GcamGO
+PRODUCT_PACKAGES += \
+    GCamGOPrebuilt
+
 # Radio
 PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.0.vendor \
