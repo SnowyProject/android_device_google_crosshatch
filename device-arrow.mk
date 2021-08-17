@@ -69,6 +69,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.cryptfshw@1.0 \
     vendor.qti.hardware.cryptfshw@1.0.vendor
 
+# Now Playing
+PRODUCT_PACKAGES += \
+    NowPlayingOverlay
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += device/google/crosshatch/overlay-arrow
 
