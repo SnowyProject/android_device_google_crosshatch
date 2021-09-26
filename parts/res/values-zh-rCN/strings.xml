@@ -32,4 +32,8 @@
     <string name="contrast_slider_title">对比度</string>
     <string name="value_slider_title">色值</string>
     <string name="hue_slider_title">色调</string>
+    <!-- DC dimming settings -->
+    <string name="dc_dimming_enable_title">DC调光</string>
+    <string name="dc_dimming_enable_summary">在弱光条件下减少眼睛疲劳</string>
+    <string name="dc_dimming_enable_summary_not_supported">内核当前不支持DC调光</string>
 </resources>

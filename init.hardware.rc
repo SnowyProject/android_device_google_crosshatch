@@ -130,6 +130,10 @@ on init && property:vendor.skip.init=0
     chown system system /sys/module/msm_drm/parameters/kcal_cont
     chmod 0660 /sys/module/msm_drm/parameters/kcal_cont
 
+    # Dc Dimming
+    chown system system /sys/module/msm_drm/parameters/flickerfree_enabled
+    chmod 0666 /sys/module/msm_drm/parameters/flickerfree_enabled
+
     # bring back all cores
     write /sys/devices/system/cpu/cpu0/online 1
     write /sys/devices/system/cpu/cpu1/online 1
