@@ -1,0 +1,27 @@
+#
+# Copyright (C) 2021 The Android Open Source Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+# Inherit some common Arrow stuff.
+$(call inherit-product, vendor/arrow/config/common.mk)
+
+# Inherit device configuration
+$(call inherit-product, device/google/crosshatch/aosp_crosshatch.mk)
+
+-include device/google/crosshatch/device-arrow.mk
+
+## Device identifier. This must come after all inclusions
+PRODUCT_NAME := arrow_crosshatch
+PRODUCT_BRAND := google
+PRODUCT_MODEL := Pixel 3 XL
+TARGET_MANUFACTURER := Google
+
+DEVICE_MAINTAINER := ReallySnow
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME=crosshatch \
+    PRIVATE_BUILD_DESC="crosshatch-user 12 SP1A.210812.015 7679548 release-keys"
+
+BUILD_FINGERPRINT := google/crosshatch/crosshatch:12/SP1A.210812.015/7679548:user/release-keys
