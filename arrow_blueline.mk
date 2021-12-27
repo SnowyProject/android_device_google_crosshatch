@@ -18,7 +18,9 @@ PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 3
 TARGET_MANUFACTURER := Google
 
+# ArrowOS additions
 DEVICE_MAINTAINER := ReallySnow
+$(call inherit-product-if-exists, vendor/lawnchair/lawnchair.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=blueline \
