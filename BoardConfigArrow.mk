@@ -17,6 +17,9 @@ TARGET_KERNEL_ADDITIONAL_FLAGS := \
 TARGET_KERNEL_CONFIG := b1c1_defconfig
 TARGET_KERNEL_SOURCE := kernel/google/bluecross
 
+# NDK platform
+NEED_AIDL_NDK_PLATFORM_BACKEND := true
+
 # Reserve space for gapps install
 ifneq ($(ARROW_GAPPS),true)
 BOARD_PRODUCTIMAGE_EXTFS_INODE_COUNT := -1
