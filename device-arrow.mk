@@ -8,6 +8,10 @@
 PRODUCT_PACKAGES += \
     ElmyraService
 
+# AiAi Allowlist
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/aiai_allowlist.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/aiai_allowlist.xml
+
 # Authsecret
 PRODUCT_PACKAGES += \
     android.hardware.authsecret@1.0.vendor
