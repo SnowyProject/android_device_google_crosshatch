@@ -6,9 +6,13 @@
   {
     "repository": "android_vendor_google_bluecross",
     "target_path": "vendor/google"
-    },
+  },
   {
     "repository": "android_packages_apps_GCamGOPrebuilt",
     "target_path": "packages/apps/GCamGOPrebuilt"
+  },
+  {
+    "repository": "android_packages_apps_ElmyraService",
+    "target_path": "packages/apps/ElmyraService"
   }
 ]
