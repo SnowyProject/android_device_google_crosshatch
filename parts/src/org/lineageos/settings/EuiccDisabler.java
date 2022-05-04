@@ -30,8 +30,7 @@ class EuiccDisabler {
     private static final String[] EUICC_PACKAGES = new String[]{
         "com.google.android.euicc",
         "com.google.euiccpixel",
-        "com.google.android.ims",
-        "com.google.android.apps.tycho"
+        "com.google.android.ims"
     };
 
     private static boolean isInstalledAndEnabled(PackageManager pm, String pkgName) {
