@@ -177,6 +177,11 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-arrow
 PRODUCT_PACKAGES += \
     GoogleParts
 
+ifneq ($(filter crosshatch,$(KSCOPE_BUILD)),)
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
+    device/google/crosshatch/crosshatch/overlay-kscope/frameworks/base/packages/overlays/NoCutoutOverlay
+endif
+
 # Perf
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.perf@1.0 \
