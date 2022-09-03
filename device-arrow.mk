@@ -78,13 +78,6 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.4.vendor \
     libdrm.vendor \
 
-# DSDS
-# Allows using eSIM even without EuiccGoogle (which requires GMS)
-# albeit the management UI is unavailable
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.radio.multisim.config=dsds \
-    persist.vendor.mdm.multisim.cfg=dsds
-
 # EUICC
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.euicc.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.euicc.xml
