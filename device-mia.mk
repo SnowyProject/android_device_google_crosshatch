@@ -171,15 +171,15 @@ PRODUCT_PACKAGES += \
     android.hardware.oemlock@1.0.vendor
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-arrow
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-mia
 
 # Parts
 PRODUCT_PACKAGES += \
     GoogleParts
 
-ifneq ($(filter crosshatch,$(KSCOPE_BUILD)),)
+ifeq ($(MIA_BUILD),crosshatch)
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    device/google/crosshatch/crosshatch/overlay-kscope/frameworks/base/packages/overlays/NoCutoutOverlay
+    device/google/crosshatch/crosshatch/overlay-mia/frameworks/base/packages/overlays/NoCutoutOverlay
 endif
 
 # Perf
